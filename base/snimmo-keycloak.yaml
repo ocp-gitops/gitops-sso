@@ -8,5 +8,4 @@ spec:
   externalAccess:
     enabled: true
     tlsTermination: reencrypt
-    host: PATCH
   instances: 1

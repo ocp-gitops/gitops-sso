@@ -3,15 +3,3 @@ kind: Kustomization
 
 resources:
   - ../../base
-
-patchesJson6902:
-  - target:
-      group: keycloak.org
-      version: v1alpha1
-      kind: Keycloak
-      name: snimmo-keycloak
-    patch: |-
-      - op: replace
-        path: /spec/externalAccess/host
-        value: sso.apps.ocp.snimmo.com
-
