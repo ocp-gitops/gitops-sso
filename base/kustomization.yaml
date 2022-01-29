@@ -5,3 +5,4 @@ namespace: sso
 
 resources:
   - snimmo-keycloak.yaml
+  - snimmo-keycloak-realm.yaml

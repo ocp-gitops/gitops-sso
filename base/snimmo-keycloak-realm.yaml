@@ -1,0 +1,13 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakRealm
+metadata:
+  name: snimmo-keycloak-realm
+spec:
+  instanceSelector:
+    matchLabels:
+      app: sso
+  realm:
+    id: snimmo
+    realm: snimmo
+    enabled: true
+    displayName: snimmo realm
