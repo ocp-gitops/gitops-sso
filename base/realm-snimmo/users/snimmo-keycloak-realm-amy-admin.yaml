@@ -1,0 +1,17 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakUser
+metadata:
+  name: snimmo-keycloak-realm-amy-admin
+  labels:
+    app: sso
+spec:
+  realmSelector:
+    matchLabels:
+      app: sso
+  user:
+    username: amy.admin
+    firstName: Amy
+    lastName: Admin
+    email: amy.admin@snimmo.com
+    enabled: true
+    emailVerified: false
