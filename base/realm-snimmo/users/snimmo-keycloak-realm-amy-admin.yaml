@@ -3,11 +3,11 @@ kind: KeycloakUser
 metadata:
   name: snimmo-keycloak-realm-amy-admin
   labels:
-    app: sso
+    realm: snimmo
 spec:
   realmSelector:
     matchLabels:
-      app: sso
+      realm: snimmo
   user:
     username: amy.admin
     firstName: Amy
