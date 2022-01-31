@@ -6,3 +6,4 @@ namespace: sso
 resources:
   - cluster-keycloak.yaml
   - realm-snimmo
+  - realm-kubetrade

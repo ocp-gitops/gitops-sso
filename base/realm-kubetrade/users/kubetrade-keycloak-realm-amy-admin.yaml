@@ -1,0 +1,17 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakUser
+metadata:
+  name: kubetrade-keycloak-realm-amy-admin
+  labels:
+    realm: kubetrade
+spec:
+  realmSelector:
+    matchLabels:
+      realm: kubetrade
+  user:
+    username: amy.admin
+    firstName: Amy
+    lastName: Admin
+    email: amy.admin@kubetrade.com
+    enabled: true
+    emailVerified: false

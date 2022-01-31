@@ -1,0 +1,15 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakRealm
+metadata:
+  name: kubetrade-keycloak-realm
+  labels:
+    realm: kubetrade
+spec:
+  instanceSelector:
+    matchLabels:
+      app: sso
+  realm:
+    id: kubetrade
+    realm: kubetrade
+    enabled: true
+    displayName: Kubetrade realm
