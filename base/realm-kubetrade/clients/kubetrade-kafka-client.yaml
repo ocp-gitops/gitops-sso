@@ -1,0 +1,12 @@
+apiVersion: keycloak.org/v1alpha1
+kind: KeycloakClient
+metadata:
+  name: kubetrade-kafka-client
+spec:
+  realmSelector:
+    matchLabels:
+      realm: kubetrade
+  client:
+    clientId: kubetrade-kafka
+    secret: client-secret
+    clientAuthenticatorType: client-secret
