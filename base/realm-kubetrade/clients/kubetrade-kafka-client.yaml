@@ -8,5 +8,3 @@ spec:
       realm: kubetrade
   client:
     clientId: kubetrade-kafka
-    secret: client-secret
-    clientAuthenticatorType: client-secret
